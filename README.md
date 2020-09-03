@@ -9,6 +9,7 @@ Mobile Application for iOS
 
   - A collectionview with offers is displayed with other details
   - User can mark an item as favorite or unfavorite
+  - Written automation test cases for buttons, navigation and scrolling
 
 
 You can also:
