@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C4023D824F4B59300FF985C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4023D724F4B59300FF985C /* AppDelegate.swift */; };
+		1C4023DC24F4B59300FF985C /* OffersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4023DB24F4B59300FF985C /* OffersController.swift */; };
+		1C4023E124F4B59A00FF985C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4023E024F4B59A00FF985C /* Assets.xcassets */; };
+		1C4023E424F4B59A00FF985C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4023E224F4B59A00FF985C /* LaunchScreen.storyboard */; };
+		1C4023EC24F4BA2600FF985C /* Offers.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C4023EB24F4BA2600FF985C /* Offers.json */; };
+		1C4023F424F4C3D600FF985C /* OfferCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4023F324F4C3D600FF985C /* OfferCollectionCell.swift */; };
+		1C594991250021CE00B88C3E /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C594990250021CE00B88C3E /* Offer.swift */; };
+		1C7205CD24FCF8EB00A463F1 /* IbottaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7205CC24FCF8EB00A463F1 /* IbottaAppUITests.swift */; };
+		1C7205EE24FED81F00A463F1 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7205ED24FED81F00A463F1 /* Utilities.swift */; };
+		1C7205F224FEE8B600A463F1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7205F124FEE8B600A463F1 /* DataService.swift */; };
+		1C7D1F7A24F63DE00008092B /* OfferDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D1F7924F63DE00008092B /* OfferDetailController.swift */; };
+		65BDCB7001284DBC6D8B6CE0 /* Pods_IbottaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B5C70190423256A4EBA1DF /* Pods_IbottaApp.framework */; };
+		77C4F8F24AD535061791CE5B /* Pods_IbottaApp_IbottaAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C5D1DAC68D2F1ED9E6E79D /* Pods_IbottaApp_IbottaAppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C7205CF24FCF8EB00A463F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C4023CC24F4B59300FF985C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C4023D324F4B59300FF985C;
+			remoteInfo = IbottaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11C5D1DAC68D2F1ED9E6E79D /* Pods_IbottaApp_IbottaAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IbottaApp_IbottaAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C4023D424F4B59300FF985C /* IbottaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IbottaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C4023D724F4B59300FF985C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C4023DB24F4B59300FF985C /* OffersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersController.swift; sourceTree = "<group>"; };
+		1C4023E024F4B59A00FF985C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C4023E324F4B59A00FF985C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C4023E524F4B59A00FF985C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C4023EB24F4BA2600FF985C /* Offers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Offers.json; sourceTree = "<group>"; };
+		1C4023F324F4C3D600FF985C /* OfferCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCollectionCell.swift; sourceTree = "<group>"; };
+		1C594990250021CE00B88C3E /* Offer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		1C7205CA24FCF8EB00A463F1 /* IbottaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IbottaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C7205CC24FCF8EB00A463F1 /* IbottaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IbottaAppUITests.swift; sourceTree = "<group>"; };
+		1C7205CE24FCF8EB00A463F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C7205ED24FED81F00A463F1 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		1C7205F124FEE8B600A463F1 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		1C7D1F7924F63DE00008092B /* OfferDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailController.swift; sourceTree = "<group>"; };
+		608A34B99D0A05E5C58177E0 /* Pods-IbottaApp-IbottaAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IbottaApp-IbottaAppUITests.release.xcconfig"; path = "Target Support Files/Pods-IbottaApp-IbottaAppUITests/Pods-IbottaApp-IbottaAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		61E41745258271124D76D60F /* Pods-IbottaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IbottaApp.debug.xcconfig"; path = "Target Support Files/Pods-IbottaApp/Pods-IbottaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6CF4C35D73AAAF79785B54BC /* Pods-IbottaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IbottaApp.release.xcconfig"; path = "Target Support Files/Pods-IbottaApp/Pods-IbottaApp.release.xcconfig"; sourceTree = "<group>"; };
+		70B5C70190423256A4EBA1DF /* Pods_IbottaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IbottaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8858EC40F787736765E8318B /* Pods-IbottaApp-IbottaAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IbottaApp-IbottaAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-IbottaApp-IbottaAppUITests/Pods-IbottaApp-IbottaAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C4023D124F4B59300FF985C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65BDCB7001284DBC6D8B6CE0 /* Pods_IbottaApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C7205C724FCF8EB00A463F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77C4F8F24AD535061791CE5B /* Pods_IbottaApp_IbottaAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C4023CB24F4B59300FF985C = {
+			isa = PBXGroup;
+			children = (
+				1C4023D624F4B59300FF985C /* IbottaApp */,
+				1C7205CB24FCF8EB00A463F1 /* IbottaAppUITests */,
+				1C4023D524F4B59300FF985C /* Products */,
+				22ABAE7C45CA98697AFC9F8E /* Pods */,
+				33AB5536D36488BF5DC98DD4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1C4023D524F4B59300FF985C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C4023D424F4B59300FF985C /* IbottaApp.app */,
+				1C7205CA24FCF8EB00A463F1 /* IbottaAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C4023D624F4B59300FF985C /* IbottaApp */ = {
+			isa = PBXGroup;
+			children = (
+				1C5949922500F0DF00B88C3E /* Utility */,
+				1C59498F250021BC00B88C3E /* Model */,
+				1C7205DB24FD940500A463F1 /* Parser */,
+				1C7205D924FD93DE00A463F1 /* CollectionViewCell */,
+				1C7205D724FD93AC00A463F1 /* ViewControllers */,
+				1C4023D724F4B59300FF985C /* AppDelegate.swift */,
+				1C4023E024F4B59A00FF985C /* Assets.xcassets */,
+				1C4023E224F4B59A00FF985C /* LaunchScreen.storyboard */,
+				1C4023E524F4B59A00FF985C /* Info.plist */,
+				1C4023EB24F4BA2600FF985C /* Offers.json */,
+			);
+			path = IbottaApp;
+			sourceTree = "<group>";
+		};
+		1C59498F250021BC00B88C3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C594990250021CE00B88C3E /* Offer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C5949922500F0DF00B88C3E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1C7205ED24FED81F00A463F1 /* Utilities.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		1C7205CB24FCF8EB00A463F1 /* IbottaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1C7205CC24FCF8EB00A463F1 /* IbottaAppUITests.swift */,
+				1C7205CE24FCF8EB00A463F1 /* Info.plist */,
+			);
+			path = IbottaAppUITests;
+			sourceTree = "<group>";
+		};
+		1C7205D724FD93AC00A463F1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C4023DB24F4B59300FF985C /* OffersController.swift */,
+				1C7D1F7924F63DE00008092B /* OfferDetailController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1C7205D924FD93DE00A463F1 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C4023F324F4C3D600FF985C /* OfferCollectionCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		1C7205DB24FD940500A463F1 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				1C7205F124FEE8B600A463F1 /* DataService.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		22ABAE7C45CA98697AFC9F8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61E41745258271124D76D60F /* Pods-IbottaApp.debug.xcconfig */,
+				6CF4C35D73AAAF79785B54BC /* Pods-IbottaApp.release.xcconfig */,
+				8858EC40F787736765E8318B /* Pods-IbottaApp-IbottaAppUITests.debug.xcconfig */,
+				608A34B99D0A05E5C58177E0 /* Pods-IbottaApp-IbottaAppUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		33AB5536D36488BF5DC98DD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70B5C70190423256A4EBA1DF /* Pods_IbottaApp.framework */,
+				11C5D1DAC68D2F1ED9E6E79D /* Pods_IbottaApp_IbottaAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C4023D324F4B59300FF985C /* IbottaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C4023E824F4B59A00FF985C /* Build configuration list for PBXNativeTarget "IbottaApp" */;
+			buildPhases = (
+				582C93D66FF73D7EA64CA275 /* [CP] Check Pods Manifest.lock */,
+				1C4023D024F4B59300FF985C /* Sources */,
+				1C4023D124F4B59300FF985C /* Frameworks */,
+				1C4023D224F4B59300FF985C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IbottaApp;
+			productName = IbottaApp;
+			productReference = 1C4023D424F4B59300FF985C /* IbottaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C7205C924FCF8EB00A463F1 /* IbottaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C7205D124FCF8EB00A463F1 /* Build configuration list for PBXNativeTarget "IbottaAppUITests" */;
+			buildPhases = (
+				BC0424ED8018EDD8AC6D54BC /* [CP] Check Pods Manifest.lock */,
+				1C7205C624FCF8EB00A463F1 /* Sources */,
+				1C7205C724FCF8EB00A463F1 /* Frameworks */,
+				1C7205C824FCF8EB00A463F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C7205D024FCF8EB00A463F1 /* PBXTargetDependency */,
+			);
+			name = IbottaAppUITests;
+			productName = IbottaAppUITests;
+			productReference = 1C7205CA24FCF8EB00A463F1 /* IbottaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C4023CC24F4B59300FF985C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "nikita lalwani";
+				TargetAttributes = {
+					1C4023D324F4B59300FF985C = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					1C7205C924FCF8EB00A463F1 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 1C4023D324F4B59300FF985C;
+					};
+				};
+			};
+			buildConfigurationList = 1C4023CF24F4B59300FF985C /* Build configuration list for PBXProject "IbottaApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C4023CB24F4B59300FF985C;
+			productRefGroup = 1C4023D524F4B59300FF985C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C4023D324F4B59300FF985C /* IbottaApp */,
+				1C7205C924FCF8EB00A463F1 /* IbottaAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C4023D224F4B59300FF985C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C4023EC24F4BA2600FF985C /* Offers.json in Resources */,
+				1C4023E424F4B59A00FF985C /* LaunchScreen.storyboard in Resources */,
+				1C4023E124F4B59A00FF985C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C7205C824FCF8EB00A463F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		582C93D66FF73D7EA64CA275 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IbottaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC0424ED8018EDD8AC6D54BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IbottaApp-IbottaAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C4023D024F4B59300FF985C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C594991250021CE00B88C3E /* Offer.swift in Sources */,
+				1C4023DC24F4B59300FF985C /* OffersController.swift in Sources */,
+				1C7205EE24FED81F00A463F1 /* Utilities.swift in Sources */,
+				1C7205F224FEE8B600A463F1 /* DataService.swift in Sources */,
+				1C4023D824F4B59300FF985C /* AppDelegate.swift in Sources */,
+				1C4023F424F4C3D600FF985C /* OfferCollectionCell.swift in Sources */,
+				1C7D1F7A24F63DE00008092B /* OfferDetailController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C7205C624FCF8EB00A463F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C7205CD24FCF8EB00A463F1 /* IbottaAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C7205D024FCF8EB00A463F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C4023D324F4B59300FF985C /* IbottaApp */;
+			targetProxy = 1C7205CF24FCF8EB00A463F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C4023E224F4B59A00FF985C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C4023E324F4B59A00FF985C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C4023E624F4B59A00FF985C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C4023E724F4B59A00FF985C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C4023E924F4B59A00FF985C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61E41745258271124D76D60F /* Pods-IbottaApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8E228Z7TT;
+				INFOPLIST_FILE = IbottaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitalalwani.IbottaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C4023EA24F4B59A00FF985C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF4C35D73AAAF79785B54BC /* Pods-IbottaApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8E228Z7TT;
+				INFOPLIST_FILE = IbottaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitalalwani.IbottaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1C7205D224FCF8EB00A463F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8858EC40F787736765E8318B /* Pods-IbottaApp-IbottaAppUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8E228Z7TT;
+				INFOPLIST_FILE = IbottaAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitalalwani.IbottaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IbottaApp;
+			};
+			name = Debug;
+		};
+		1C7205D324FCF8EB00A463F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 608A34B99D0A05E5C58177E0 /* Pods-IbottaApp-IbottaAppUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8E228Z7TT;
+				INFOPLIST_FILE = IbottaAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikitalalwani.IbottaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IbottaApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C4023CF24F4B59300FF985C /* Build configuration list for PBXProject "IbottaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C4023E624F4B59A00FF985C /* Debug */,
+				1C4023E724F4B59A00FF985C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C4023E824F4B59A00FF985C /* Build configuration list for PBXNativeTarget "IbottaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C4023E924F4B59A00FF985C /* Debug */,
+				1C4023EA24F4B59A00FF985C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C7205D124FCF8EB00A463F1 /* Build configuration list for PBXNativeTarget "IbottaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C7205D224FCF8EB00A463F1 /* Debug */,
+				1C7205D324FCF8EB00A463F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C4023CC24F4B59300FF985C /* Project object */;
+}
